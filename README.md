@@ -5,7 +5,7 @@ Created with reference to [Chainer implementation](https://github.com/chainer/ch
 ## Usage
 1. Bulid Docker image.
     - `sudo docker build -t pytorch_lightning_wavenet .`
-2. run Docker container.
+2. Run Docker container.
     - `sudo docker run --shm-size=512m --gpus all --rm -v $PWD/wavenet:/wavenet -w /wavenet -it pytorch_lightning_wavenet:latest bash`
 3. Download dataset.
     - `wget http://www.udialogue.org/download/VCTK-Corpus.tar.gz`
