@@ -1,1 +1,1 @@
-sudo docker build --no-cache -t pytorch_lightning_wavenet .
+sudo docker build -t pytorch_lightning_wavenet .
