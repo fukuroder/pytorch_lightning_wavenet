@@ -22,8 +22,8 @@ class WavenetDataModule(pl.LightningDataModule):
         self.process = process
 
     def setup(self, stage):
-        if not os.path.isdir(args.dataset):
-            raise RuntimeError('Dataset directory not found: {}'.format(args.dataset))
+        if not os.path.isdir(self.dataset_path):
+            raise RuntimeError('Dataset directory not found: {}'.format(self.dataset_path))
             
         dataset = Dataset(self.dataset_path, self.length, self.quantize)
         train_dataset_len = int(len(dataset) * 0.9)
